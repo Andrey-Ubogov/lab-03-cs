@@ -1,0 +1,116 @@
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4CD394EF-5FD8-DDA1-DA84-70F304011F16}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>lab_03_cd</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Device.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="Scenario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\5a\4d8cd968fbba9c33d614fca84a1e35419dfc70" />
+    <None Include=".git\objects\77\86d0a95024125706a5673ff85f750175ad3a5c" />
+    <None Include=".git\objects\77\cd13208c11001c054ccb0bbc47c3bc3e65ed82" />
+    <None Include=".git\objects\pack\pack-9d478828c6a5256b35edd9784fd47565ae43da6a.idx" />
+    <None Include=".git\objects\pack\pack-9d478828c6a5256b35edd9784fd47565ae43da6a.pack" />
+    <None Include=".git\objects\pack\pack-9d478828c6a5256b35edd9784fd47565ae43da6a.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\lab-03-cs\CopilotIndices\17.14.1091.29919\CodeChunks.db" />
+    <None Include=".vs\lab-03-cs\CopilotIndices\17.14.1091.29919\SemanticSymbols.db" />
+    <None Include=".vs\lab-03-cs\FileContentIndex\10bc96b8-51f7-4482-a8a4-e77fac2427fe.vsidx" />
+    <None Include=".vs\lab-03-cs\FileContentIndex\5f99a1ff-65ea-420e-95b0-132152434872.vsidx" />
+    <None Include=".vs\lab-03-cs\FileContentIndex\80652ba1-35e0-45f9-836f-f33ac5f2b60f.vsidx" />
+    <None Include=".vs\lab-03-cs\FileContentIndex\a77d7ecf-b933-45c4-932b-e69e4ce65333.vsidx" />
+    <None Include=".vs\lab-03-cs\FileContentIndex\e6cc6f8b-89cb-4721-a779-598bc9638379.vsidx" />
+    <None Include=".vs\lab-03-cs\v17\.suo" />
+    <None Include=".vs\lab-03-cs\v17\Browse.VC.db" />
+    <None Include=".vs\lab-03-cs\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\lab-03-cs\v17\DocumentLayout.json" />
+    <None Include=".vs\lab-03-cs\v17\ipch\AutoPCH\69a9c22f1fb45e56\DEVICE.ipch" />
+    <None Include=".vs\lab-03-cs\v17\ipch\AutoPCH\ae77dfa0a7fd2ea1\MAIN.ipch" />
+    <None Include=".vs\lab-03-cs\v17\ipch\AutoPCH\b11dcf37799b33cb\ROOM.ipch" />
+    <None Include=".vs\lab-03-cs\v17\Solution.VC.db" />
+    <None Include="app.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\lab-03-cd\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
